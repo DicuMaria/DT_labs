@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\client",
+    "\\client\\css",
     "\\client\\js",
     "\\server"
   ],
-  "SelectedNode": "\\server\\hamming.js",
+  "SelectedNode": "\\client\\js\\app.js",
   "PreviewInSolutionExplorer": false
 }
