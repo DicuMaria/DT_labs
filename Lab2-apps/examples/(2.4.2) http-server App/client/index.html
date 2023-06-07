@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Users manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="libs/vue/vue.js"></script>
+  <script type="text/javascript" src="libs/axios/axios.js"></script>
+  <script type="text/javascript" src="users.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <ul class="user-list">
+      <li v-for="(user, index) in users">
+        <div class="user-row">
+          <div class="user-name"><b>{{ user.name }}</b></div>
+          <div class="user-city"><i>{{ user.city }}</i></div>
+        </div>
+      </li>
+    </ul>
+
+	<label>User name: </label><input type="text" class="user-name" v-model="username" placeholder="Name">
+    <label>User city: </label><input type="text" class="user-city" v-model="usercity" placeholder="City"><br>
+    <button class="process-button" v-on:click="add()">Add</button><br>
+    <label>User ID: </label><input type="number" class="user-city" v-model.number="userid" placeholder="ID"><br>
+    <button class="process-button" v-on:click="remove()">Delete</button>
+    <button class="process-button" v-on:click="update()">Update</button>
+    <div>{{msg}}</div>
+	
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

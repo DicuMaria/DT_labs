@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="libs/vue/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button class="process-button1" v-on:click="countNumber()"> + </button>
+		<button class="process-button2" v-on:click="dec()"> - </button>
+		<div class="output">{{ count }}</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

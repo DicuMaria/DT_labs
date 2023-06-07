@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <input v-model="username" placeholder="Enter username" />
+        <input v-model="password" type="password" placeholder="Enter password" />
+        <button v-on:click="login()">Login</button>
+        <h1>{{ status }}</h1>
+
+        <div v-for="product in products">
+            <h1>{{ product.name }}</h1>
+        </div>
+
+
+    </div>
+
+    <script src="vue.js"></script>
+    <script type="text/javascript" src="axios.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
